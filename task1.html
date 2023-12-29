@@ -3,18 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Online Food Delivery Services in India | MyFoodPoint.com </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="phone.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Task 1 prodigyinfotech</title>
+ <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+
+}
+
+/* Navbar section*/
+
+#navbar{
+    display: flex  ;
+    align-items: center;
+    position: relative;
+}
+
+#logo{
+    margin: 10px 10px ;
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 6px;
+    border-radius: 100px;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3 ; 
+    z-index: -1;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white ;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/*Home Section*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 358px;
+   
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('home.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89 ; 
+    z-index: -1;
+    height: 664px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    padding: 1px;
+}
+/*Services section*/
+ #services{
+    margin: 34px;
+    display: flex;
+   
+
+ }
+
+ #services .box {
+    border: 2px solid brown ;
+    padding: 34px;
+    margin: 3px 30px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    height: 290px;
+ }
+ #services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+ }
+/*utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+} 
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:  45px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ .center{
+    text-align: center;
+    padding-top: 160px;
+ }
+
+.center1{
+    text-align: center;
+    font-size: large;
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*Client Section */
+
+#client-section{
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+    
+}
+
+.client-item{
+    padding: 40px;
+}
+
+.center2{
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/*Contact Section*/
+
+#contact{
+    margin-top: -10px;
+    position: relative;
+   
+}
+#contact-box{
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    display: flex;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('12.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+textarea,input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+    
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    height: 40px;
+}
+
+/* Navbar section*/
+
+#navbar{
+    display: flex  ;
+    align-items: center;
+    position: relative;
+}
+
+#logo{
+    margin: 10px 10px ;
+}
+
+#logo img{
+    height: 100px;
+    margin: 3px 6px;
+    border-radius: 100px;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3 ; 
+    z-index: -1;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white ;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/*Home Section*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 358px;
+   
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('home.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89 ; 
+    z-index: -1;
+    height: 664px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    padding: 1px;
+}
+/*Services section*/
+ #services{
+    margin: 34px;
+    display: flex;
+   
+
+ }
+
+ #services .box {
+    border: 2px solid brown ;
+    padding: 34px;
+    margin: 3px 30px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    height: 290px;
+ }
+ #services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+ }
+/*utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+} 
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:  45px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ .center{
+    text-align: center;
+    padding-top: 160px;
+ }
+
+.center1{
+    text-align: center;
+    font-size: large;
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*Client Section */
+
+#client-section{
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+    
+}
+
+.client-item{
+    padding: 40px;
+}
+
+.center2{
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/*Contact Section*/
+
+#contact{
+    margin-top: -10px;
+    position: relative;
+   
+}
+#contact-box{
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    display: flex;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('12.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+textarea,input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+    
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    height: 40px;
+}
+ </style>
 
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="77.png" alt="MyFoodPoint.com" width="100px">          
+            <img src="https://content.jdmagicbox.com/comp/navi-mumbai/g6/022pxx22.xx22.191113161625.y2g6/catalogue/the-food-adda-ghansoli-navi-mumbai-fast-food-06magov3qf.jpg" alt="MyFoodAdda.com" width="100px">          
         </div>
 
         <ul>
@@ -27,7 +496,7 @@
     </nav>
 
     <section id="home">
-      <h1 class="h-primary ">Welcome to FoodPoint</h1>   
+      <h1 class="h-primary ">Welcome to FoodAdda</h1>   
       <p>Lorem Ipsum is simply dummy text of the printing 
        and typesetting industry.</p>
       <p>Lorem Ipsum is simply dummy text of the printing 
@@ -107,8 +576,8 @@
     </section>
     <footer>
         <div class="center1">
-            Copyright &copy; www.FoodPoint.com All rights reserved!
-            <br>Made by Srishtijsingh
+            Copyright &copy; www.FoodAdda.com All rights reserved!
+            <br>made by Shatrughna 
         </div>
     </footer>
 </body>
